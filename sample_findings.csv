@@ -1,0 +1,41 @@
+ip,hostname,title,cve,severity,cvss,port,protocol,first_seen,last_seen,exploit_available
+10.0.1.10,web-prod-01,Apache Log4j remote code execution,CVE-2021-44228,Critical,10.0,443,tcp,2026-06-12,2026-09-28,true
+10.0.1.11,web-prod-02,Spring Framework remote code execution,CVE-2022-22965,Critical,9.8,8443,tcp,2026-07-01,2026-09-28,true
+10.0.1.20,db-prod-01,Microsoft Exchange Server SSRF,CVE-2021-26855,Critical,9.1,443,tcp,2026-05-20,2026-09-27,true
+10.0.1.40,vpn-gw-01,PAN-OS command injection,CVE-2024-3400,Critical,10.0,443,tcp,2026-08-15,2026-09-28,true
+10.0.1.30,file-srv-01,Windows Netlogon privilege escalation,CVE-2020-1472,Critical,10.0,445,tcp,2026-03-10,2026-09-25,true
+10.0.1.10,web-prod-01,Citrix ADC path traversal RCE,CVE-2019-19781,Critical,9.8,443,tcp,2026-04-02,2026-09-28,true
+10.0.2.15,wkst-042,Windows RDP remote code execution (BlueKeep),CVE-2019-0708,Critical,9.8,3389,tcp,2026-09-01,2026-09-28,true
+10.0.1.11,web-prod-02,Cisco IOS XE privilege escalation,CVE-2023-20198,Critical,10.0,443,tcp,2026-09-10,2026-09-28,true
+10.0.1.10,web-prod-01,SMB remote code execution (EternalBlue),CVE-2017-0144,High,8.1,445,tcp,2026-02-14,2026-09-28,true
+10.0.1.20,db-prod-01,libwebp heap buffer overflow,CVE-2023-4863,High,8.8,1433,tcp,2026-09-05,2026-09-27,false
+10.0.1.30,file-srv-01,Unpatched Windows Server 2019 cumulative update,,High,8.5,445,tcp,2026-07-20,2026-09-26,false
+10.0.1.40,vpn-gw-01,SSL VPN weak cipher suites offered,,High,7.4,443,tcp,2026-06-01,2026-09-28,false
+10.0.1.11,web-prod-02,Apache HTTP Server outdated (2.4.49),,High,7.5,80,tcp,2026-08-01,2026-09-28,false
+10.0.2.15,wkst-042,Google Chrome outdated (multiple CVEs),,High,8.8,0,tcp,2026-09-12,2026-09-28,false
+10.0.2.16,wkst-043,Adobe Acrobat Reader outdated,,High,7.8,0,tcp,2026-08-20,2026-09-28,false
+10.0.1.20,db-prod-01,Microsoft SQL Server weak SA password,,High,8.0,1433,tcp,2026-09-15,2026-09-27,false
+10.0.3.10,iot-printer-01,Printer web interface default credentials,,High,9.0,80,tcp,2026-01-10,2026-09-20,true
+10.0.1.30,file-srv-01,LLMNR poisoning possible (no SMB signing),,High,7.5,445,tcp,2026-05-05,2026-09-25,false
+10.0.1.10,web-prod-01,TLS certificate expiring within 30 days,,High,7.4,443,tcp,2026-09-20,2026-09-28,false
+10.0.1.40,vpn-gw-01,IKE aggressive mode with pre-shared key,,High,7.0,500,udp,2026-04-18,2026-09-28,false
+10.0.1.10,web-prod-01,TLS 1.0 protocol supported,,Medium,5.9,443,tcp,2026-03-01,2026-09-28,false
+10.0.1.11,web-prod-02,HTTP TRACE method enabled,,Medium,5.3,80,tcp,2026-02-10,2026-09-28,false
+10.0.1.20,db-prod-01,Database backups stored unencrypted,,Medium,6.5,0,tcp,2026-07-11,2026-09-27,false
+10.0.1.30,file-srv-01,SMBv1 protocol enabled,,Medium,5.5,445,tcp,2026-01-25,2026-09-25,false
+10.0.2.15,wkst-042,USB mass storage not disabled by policy,,Medium,4.8,0,tcp,2026-06-30,2026-09-28,false
+10.0.2.16,wkst-043,Local administrator password never rotated,,Medium,6.0,445,tcp,2026-05-15,2026-09-28,false
+10.0.1.40,vpn-gw-01,Verbose SSH banner discloses version,,Medium,5.0,22,tcp,2026-08-08,2026-09-28,false
+10.0.3.10,iot-printer-01,Telnet service enabled,,Medium,6.8,23,tcp,2026-01-10,2026-09-20,false
+10.0.1.10,web-prod-01,Cookie missing Secure flag,,Medium,5.4,443,tcp,2026-09-01,2026-09-28,false
+10.0.1.20,db-prod-01,SQL Server Browser service exposed,,Medium,5.0,1434,udp,2026-07-22,2026-09-27,false
+10.0.1.30,file-srv-01,Guest account enabled,,Medium,5.5,445,tcp,2026-04-04,2026-09-25,false
+10.0.2.16,wkst-043,Windows Defender definitions outdated,,Medium,5.8,0,tcp,2026-09-18,2026-09-28,false
+10.0.1.10,web-prod-01,ICMP timestamp response,,Low,2.1,0,icmp,2026-02-01,2026-09-28,false
+10.0.1.11,web-prod-02,OpenSSH version disclosure,,Low,2.5,22,tcp,2026-03-15,2026-09-28,false
+10.0.1.20,db-prod-01,TCP idle timeout too high,,Low,1.8,1433,tcp,2026-06-06,2026-09-27,false
+10.0.1.30,file-srv-01,NetBIOS name disclosure,,Low,2.3,137,udp,2026-05-19,2026-09-25,false
+10.0.2.15,wkst-042,LLMNR enabled on workstation,,Low,2.0,5355,udp,2026-08-25,2026-09-28,false
+10.0.2.16,wkst-043,Unquoted service path (low-privilege service),,Low,3.3,0,tcp,2026-07-07,2026-09-28,false
+10.0.1.40,vpn-gw-01,NTP mode 6 query allowed,,Low,2.7,123,udp,2026-09-02,2026-09-28,false
+10.0.3.10,iot-printer-01,SNMP public community string,,Low,3.5,161,udp,2026-01-10,2026-09-20,false
